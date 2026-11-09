@@ -1,0 +1,52 @@
+{
+  "issuer_name": "Demo Itinerario (prueba)",
+  "titular": "Trayenko Lift Oliva Herrera",
+  "viajeros": ["Trayenko Lift Oliva Herrera", "Josefa Igancia Calzada Gutierrez"],
+  "contacto": "trayenkooliva@gmail.com",
+  "destino": "Rio de Janeiro",
+  "origen": "Santiago de Chile",
+  "vuelo_ida": {
+    "fecha": "Mié. 10 mar. 2027",
+    "aerolinea": "JetSMART",
+    "origen": "SCL",
+    "salida": "04:46",
+    "destino": "GIG",
+    "llegada": "09:00",
+    "duracion": "4h 14m",
+    "tipo": "Directo"
+  },
+  "vuelo_vuelta": {
+    "fecha": "Dom. 14 mar. 2027",
+    "aerolinea": "JetSMART",
+    "origen": "GIG",
+    "salida": "10:45",
+    "destino": "SCL",
+    "llegada": "15:33",
+    "duracion": "4h 48m",
+    "tipo": "Directo"
+  },
+  "equipaje": "Mochila o cartera bajo el asiento + 1 maleta en bodega por adulto. Sin equipaje de mano.",
+  "hotel": {
+    "nombre": "Royal Rio Palace Hotel",
+    "estrellas": 4,
+    "direccion": "Rua Duvivier, 82, Copacabana",
+    "checkin": "Mié. 10 mar. 2027, 14:00",
+    "checkout": "Dom. 14 mar. 2027, 12:00",
+    "noches": 4,
+    "adultos": 2,
+    "cancelacion": "Cancelación gratis hasta el 07/03/2027 a las 14:00"
+  },
+  "auto": {
+    "categoria": "Autos Chicos",
+    "modelo": "Fiat Mobi, Renault Kwid (o similar)",
+    "proveedor": "Foco",
+    "dias": 4,
+    "retiro": "Mié. 10 mar. 2027, 10:00",
+    "devolucion": "Dom. 14 mar. 2027, 07:00",
+    "oficina": "Rua Luís Belart, 70 (transporte desde Aeropuerto Galeão), abierta 24 h",
+    "conductor": "Trayenko Lift Oliva Herrera",
+    "cambios": "Permite (con costo)",
+    "cancelacion": "No permite"
+  },
+  "total": "$ 1.535.389 CLP"
+}

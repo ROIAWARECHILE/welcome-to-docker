@@ -1,0 +1,53 @@
+{
+  "id": "ISSUER_ID.itinerario_demo_v1",
+  "classTemplateInfo": {
+    "cardTemplateOverride": {
+      "cardRowTemplateInfos": [
+        {
+          "twoItems": {
+            "startItem": {
+              "firstValue": {
+                "fields": [
+                  {
+                    "fieldPath": "object.textModulesData['ida']"
+                  }
+                ]
+              }
+            },
+            "endItem": {
+              "firstValue": {
+                "fields": [
+                  {
+                    "fieldPath": "object.textModulesData['vuelta']"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "twoItems": {
+            "startItem": {
+              "firstValue": {
+                "fields": [
+                  {
+                    "fieldPath": "object.textModulesData['hotel']"
+                  }
+                ]
+              }
+            },
+            "endItem": {
+              "firstValue": {
+                "fields": [
+                  {
+                    "fieldPath": "object.textModulesData['auto']"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

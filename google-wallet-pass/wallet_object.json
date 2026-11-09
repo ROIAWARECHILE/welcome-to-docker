@@ -1,0 +1,85 @@
+{
+  "id": "ISSUER_ID.itinerario_rio_mar2027",
+  "classId": "ISSUER_ID.itinerario_demo_v1",
+  "state": "ACTIVE",
+  "genericType": "GENERIC_TYPE_UNSPECIFIED",
+  "hexBackgroundColor": "#0b5d3b",
+  "cardTitle": {
+    "defaultValue": {
+      "language": "es",
+      "value": "Demo Itinerario (prueba)"
+    }
+  },
+  "header": {
+    "defaultValue": {
+      "language": "es",
+      "value": "Santiago de Chile → Rio de Janeiro"
+    }
+  },
+  "subheader": {
+    "defaultValue": {
+      "language": "es",
+      "value": "Mié. 10 mar. 2027 – Dom. 14 mar. 2027"
+    }
+  },
+  "textModulesData": [
+    {
+      "id": "ida",
+      "header": "Ida",
+      "body": "Mié. 10 mar. 2027 · JetSMART · SCL 04:46 → GIG 09:00 (Directo, 4h 14m)"
+    },
+    {
+      "id": "vuelta",
+      "header": "Vuelta",
+      "body": "Dom. 14 mar. 2027 · JetSMART · GIG 10:45 → SCL 15:33 (Directo, 4h 48m)"
+    },
+    {
+      "id": "hotel",
+      "header": "Hotel",
+      "body": "Royal Rio Palace Hotel (4★) · Rua Duvivier, 82, Copacabana · Check in Mié. 10 mar. 2027, 14:00 · Check out Dom. 14 mar. 2027, 12:00 · 4 noches, 2 adultos"
+    },
+    {
+      "id": "auto",
+      "header": "Auto",
+      "body": "Autos Chicos · Fiat Mobi, Renault Kwid (o similar) · Foco · Retiro Mié. 10 mar. 2027, 10:00 · Devolución Dom. 14 mar. 2027, 07:00 · Rua Luís Belart, 70 (transporte desde Aeropuerto Galeão), abierta 24 h"
+    },
+    {
+      "id": "viajeros",
+      "header": "Viajeros",
+      "body": "Trayenko Lift Oliva Herrera, Josefa Igancia Calzada Gutierrez"
+    },
+    {
+      "id": "conductor",
+      "header": "Conductor",
+      "body": "Trayenko Lift Oliva Herrera"
+    },
+    {
+      "id": "equipaje",
+      "header": "Equipaje",
+      "body": "Mochila o cartera bajo el asiento + 1 maleta en bodega por adulto. Sin equipaje de mano."
+    },
+    {
+      "id": "politicas",
+      "header": "Politicas",
+      "body": "Hotel: Cancelación gratis hasta el 07/03/2027 a las 14:00. Auto: cambios permite (con costo), cancelación no permite."
+    },
+    {
+      "id": "total",
+      "header": "Total",
+      "body": "$ 1.535.389 CLP"
+    }
+  ],
+  "barcode": {
+    "type": "QR_CODE",
+    "value": "DEMO-ITINERARIO|trayenkooliva@gmail.com|SCL-GIG|Mié. 10 mar. 2027",
+    "alternateText": "Pase de prueba, no es un documento de viaje"
+  },
+  "validTimeInterval": {
+    "start": {
+      "date": "2027-03-01T00:00:00Z"
+    },
+    "end": {
+      "date": "2027-03-15T23:59:59Z"
+    }
+  }
+}
