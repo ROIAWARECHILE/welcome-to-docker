@@ -20,7 +20,8 @@ imita a la aerolínea, la agencia, el hotel ni la rentadora.
 1. Entra a [Google Pay & Wallet Console](https://pay.google.com/business/console) y crea una cuenta de emisor. Copia el **Issuer ID** (número largo).
 2. En Google Cloud crea una **cuenta de servicio**, descarga su clave JSON y habilita la API "Google Wallet API".
 3. En la consola de Wallet, en *Usuarios*, agrega el correo de la cuenta de servicio con rol *Desarrollador*.
-4. Mientras la cuenta esté en modo demo, Google antepone "[TEST ONLY]" al pase. Para probar en tu teléfono agrega tu Gmail como *tester* en la misma consola.
+4. Una cuenta recién creada está en **modo demo**: Google antepone "[TEST ONLY]" a todos sus pases y solo los pueden agregar los correos registrados como *tester*. Esa etiqueta la pone Google, no el pase, así que no se puede quitar desde el JSON ni desde el script.
+5. Para que el pase salga **sin "[TEST ONLY]"** hay que pedir acceso de producción: en la consola, en *Google Wallet API* → *Publishing access*, completa el formulario (nombre de la empresa, sitio, caso de uso y capturas del pase) y espera la aprobación de Google. Una vez aprobada la cuenta, vuelve a ejecutar el script y el enlace genera el pase limpio.
 
 ## Generar el pase
 
