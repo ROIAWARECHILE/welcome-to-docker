@@ -14,6 +14,8 @@ imita a la aerolínea, la agencia, el hotel ni la rentadora.
 | `wallet_class.json` | Clase generada (plantilla de la tarjeta). |
 | `wallet_object.json` | Objeto generado (el pase con los datos). |
 | `preview.html` | Vista previa aproximada de cómo se ve la tarjeta en el teléfono. |
+| `email_itinerario.html` | Correo de itinerario (marca ficticia) con botón "Agregar a Google Wallet". |
+| `send_email.py` | Envía ese correo desde tu propia cuenta por SMTP, insertando el enlace del pase. |
 
 ## Requisitos (una sola vez)
 
@@ -50,5 +52,16 @@ No incluye RUT ni fechas de nacimiento: un pase no los necesita y evita exponerl
 
 ## Enviarlo por correo
 
-El enlace es largo pero cabe en un correo. Puedes pegarlo en un mensaje desde tu propia
-cuenta o servir `preview.html` con un botón que apunte al enlace (Vercel, GitHub Pages, lo que prefieras).
+`email_itinerario.html` es un correo de itinerario con tarjetas de vuelo, hotel y auto y un botón
+que apunta al enlace del pase (marcador `WALLET_LINK`). Para enviarlo desde tu Gmail:
+
+1. En la seguridad de tu cuenta de Google crea una **contraseña de aplicación**.
+2. Ejecuta:
+
+```bash
+SMTP_USER=tucuenta@gmail.com SMTP_PASS='contraseña de aplicación' \
+python3 send_email.py --to trayenkooliva@gmail.com --wallet-link "$(cat add_to_wallet_link.txt)"
+```
+
+El remitente es tu propia cuenta con el nombre "Demo Itinerario". Si prefieres publicarlo en
+Vercel o GitHub Pages, sube el HTML tal cual y reemplaza `WALLET_LINK` a mano.
